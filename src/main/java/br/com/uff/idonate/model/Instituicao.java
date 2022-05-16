@@ -18,6 +18,9 @@ public class Instituicao extends Usuario{
   private String nome;
   private String cnpj;
   
+  @ManyToMany
+  private List<CategoriaInstituicao> categorias; 
+  
   @OneToMany
   private List<Endereco> enderecos;
 
